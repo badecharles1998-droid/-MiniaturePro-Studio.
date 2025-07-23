@@ -9,13 +9,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Favicon (logo "play") -->
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path d=%22M81.4 52.5L24.6 83.3c-1.5.8-3.3-.3-3.3-2V18.7c0-1.7 1.8-2.8 3.3-2l56.8 30.8c1.4.8 1.4 2.9 0 3.7z%22 fill=%22%23FFD700%22/></svg>">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,187 +23,181 @@
     <header class="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <!-- Remplacez par votre logo. Le style est dans le CSS -->
-                <img src="https://placehold.co/150x40/000000/FFD700?text=MiniaturePro" alt="Logo de MiniaturePro Studio" class="nav__logo-img">
+                <img src="https://placehold.co/150x40/0D1117/FFD700?text=MiniaturePro" alt="[Logo de MiniaturePro Studio]" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#about" class="nav__link">À Propos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link active-link">Accueil</a></li>
                     <li class="nav__item"><a href="#subscriptions" class="nav__link">Abonnements</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link button button--secondary">Commander</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <div class="nav__actions">
+                 <a href="#contact" class="button button--primary">Commander</a>
+                 <div class="nav__toggle" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- ==================== Section Hero ==================== -->
-        <section class="hero container">
-            <div class="hero__content">
-                <h1 class="hero__title animate-fade-in">Attire les clics. Marque l’esprit. Domine l’algorithme avec des miniatures qui parlent fort.</h1>
-                <div class="hero__buttons animate-fade-in-delay1">
-                    <a href="#subscriptions" class="button button--primary">Voir les abonnements</a>
-                    <a href="#portfolio" class="button button--secondary">Voir nos créations</a>
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title animate-fade-in-up">Attire les clics. Marque l’esprit. Domine l’algorithme.</h1>
+                    <p class="hero__subtitle animate-fade-in-up-delay1">Nous créons les miniatures qui transforment les visiteurs en abonnés fidèles.</p>
+                    <div class="hero__buttons animate-fade-in-up-delay2">
+                        <a href="#subscriptions" class="button button--primary">Voir les Abonnements</a>
+                        <a href="#portfolio" class="button button--secondary">Explorer nos créations</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero__gallery animate-fade-in-delay2">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2574&auto=format&fit=crop" alt="[Image d'une miniature YouTube percutante pour un podcast]" class="hero__img hero__img--1">
-                <img src="https://images.unsplash.com/photo-1611162616805-669c3fa0de13?q=80&w=2574&auto=format&fit=crop" alt="[Image d'une miniature YouTube colorée pour du gaming]" class="hero__img hero__img--2">
-            </div>
-        </section>
-
-        <!-- ==================== Section À Propos ==================== -->
-        <section id="about" class="about container section">
-            <div class="section__header animate-on-scroll">
-                <h2 class="section__title">Votre Vision, Notre Création</h2>
-                <p class="section__subtitle">Nous transformons vos idées en chefs-d'œuvre visuels.</p>
-            </div>
-            <div class="about__content animate-on-scroll">
-                <p>MiniaturePro Studio n'est pas juste une agence de design. Nous sommes les partenaires stratégiques de votre succès sur YouTube. Dans un océan de contenu, une miniature exceptionnelle est votre meilleur atout pour capter l'attention. Notre expertise combine psychologie des couleurs, tendances de design et analyse de performance pour créer des visuels qui non seulement sont beaux, mais qui convertissent les vues en abonnés.</p>
             </div>
         </section>
 
         <!-- ==================== Section Abonnements ==================== -->
-        <section id="subscriptions" class="subscriptions container section">
+        <section id="subscriptions" class="section container">
             <div class="section__header animate-on-scroll">
-                <h2 class="section__title">Choisissez Votre Plan</h2>
-                <p class="section__subtitle">Des offres flexibles pour chaque créateur.</p>
+                <h2 class="section__title">Des Abonnements Pensés pour les Créateurs</h2>
+                <p class="section__subtitle">Flexibilité, qualité et performance, quel que soit votre niveau.</p>
             </div>
             <div class="subscriptions__grid">
                 <!-- Pack Starter -->
                 <div class="plan-card animate-on-scroll">
-                    <h3 class="plan-card__title" style="color: #FFD700;">PACK STARTER</h3>
-                    <div class="plan-card__price">25€<span>/mois</span></div>
+                    <div class="plan-card__header">
+                        <h3 class="plan-card__title">Starter</h3>
+                        <div class="plan-card__price">25€<span>/mois</span></div>
+                    </div>
                     <ul class="plan-card__features">
-                        <li>1 miniature personnalisée</li>
-                        <li>Livraison 48h</li>
-                        <li>2 révisions incluses</li>
-                        <li>Format optimisé YouTube</li>
+                        <li><span>✓</span>1 miniature personnalisée</li>
+                        <li><span>✓</span>Livraison 48h</li>
+                        <li><span>✓</span>2 révisions incluses</li>
+                        <li><span>✓</span>Format optimisé YouTube</li>
                     </ul>
-                    <a href="#" class="button button--secondary">S’abonner avec PayPal</a>
+                    <a href="#" class="button button--secondary-outline">S’abonner via PayPal</a>
                 </div>
                 <!-- Pack Pro -->
                 <div class="plan-card plan-card--popular animate-on-scroll">
-                    <div class="plan-card__badge">Populaire</div>
-                    <h3 class="plan-card__title" style="color: #E50914;">PACK PRO</h3>
-                    <div class="plan-card__price">75€<span>/mois</span></div>
+                    <div class="plan-card__badge">Le plus choisi</div>
+                    <div class="plan-card__header">
+                        <h3 class="plan-card__title">Pro</h3>
+                        <div class="plan-card__price">75€<span>/mois</span></div>
+                    </div>
                     <ul class="plan-card__features">
-                        <li>3 miniatures / mois</li>
-                        <li>Livraison 48h par visuel</li>
-                        <li>3 révisions par visuel</li>
-                        <li>Accès prioritaire au support</li>
+                        <li><span>✓</span>3 miniatures / mois</li>
+                        <li><span>✓</span>Livraison 48h par visuel</li>
+                        <li><span>✓</span>3 révisions par visuel</li>
+                        <li><span>✓</span>Accès prioritaire au support</li>
                     </ul>
-                    <a href="#" class="button button--primary">S’abonner avec PayPal</a>
+                    <a href="#" class="button button--primary">S’abonner via PayPal</a>
                 </div>
                 <!-- Pack Creator -->
                 <div class="plan-card animate-on-scroll">
-                    <h3 class="plan-card__title" style="color: #FFD700;">PACK CREATOR</h3>
-                    <div class="plan-card__price">125€<span>/mois</span></div>
+                     <div class="plan-card__header">
+                        <h3 class="plan-card__title">Creator</h3>
+                        <div class="plan-card__price">125€<span>/mois</span></div>
+                    </div>
                     <ul class="plan-card__features">
-                        <li>5 miniatures / mois</li>
-                        <li>Livraison express 24h</li>
-                        <li>Retouches illimitées</li>
-                        <li>Analyse stratégique incluse</li>
+                        <li><span>✓</span>5 miniatures / mois</li>
+                        <li><span>✓</span>Livraison express 24h</li>
+                        <li><span>✓</span>Retouches illimitées</li>
+                        <li><span>✓</span>Analyse stratégique incluse</li>
                     </ul>
-                    <a href="#" class="button button--secondary">S’abonner avec PayPal</a>
+                    <a href="#" class="button button--secondary-outline">S’abonner via PayPal</a>
                 </div>
                  <!-- Pack VIP -->
                 <div class="plan-card animate-on-scroll">
-                    <h3 class="plan-card__title" style="color: #FFD700;">PACK VIP</h3>
-                    <div class="plan-card__price">250€<span>/mois</span></div>
+                    <div class="plan-card__header">
+                        <h3 class="plan-card__title">VIP</h3>
+                        <div class="plan-card__price">250€<span>/mois</span></div>
+                    </div>
                     <ul class="plan-card__features">
-                        <li>10 miniatures / mois</li>
-                        <li>Livraison express 24h</li>
-                        <li>Révisions illimitées</li>
-                        <li>Priorité maximale</li>
-                        <li><strong>Bonus:</strong> Bannière YouTube</li>
+                        <li><span>✓</span>10 miniatures / mois</li>
+                        <li><span>✓</span>Livraison express 24h</li>
+                        <li><span>✓</span>Révisions illimitées</li>
+                        <li><span>✓</span><strong>Bonus:</strong> Bannière YouTube</li>
                     </ul>
-                    <a href="#" class="button button--secondary">S’abonner avec PayPal</a>
+                    <a href="#" class="button button--secondary-outline">S’abonner via PayPal</a>
                 </div>
             </div>
         </section>
 
         <!-- ==================== Section Portfolio (Galerie) ==================== -->
-        <section id="portfolio" class="portfolio container section">
+        <section id="portfolio" class="section container">
             <div class="section__header animate-on-scroll">
-                <h2 class="section__title">Nos Créations</h2>
-                <p class="section__subtitle">L'art de faire cliquer.</p>
+                <h2 class="section__title">Notre Savoir-Faire en Images</h2>
+                <p class="section__subtitle">Chaque miniature est une promesse de qualité et d'engagement.</p>
             </div>
             <div class="portfolio__carousel animate-on-scroll">
                 <div class="carousel__wrapper">
                     <!-- Les images seront insérées ici par JS -->
                 </div>
-                <button class="carousel__button carousel__button--prev">&lt;</button>
-                <button class="carousel__button carousel__button--next">&gt;</button>
+                <button class="carousel__button carousel__button--prev" aria-label="Précédent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 6l-6 6l6 6"/></svg>
+                </button>
+                <button class="carousel__button carousel__button--next" aria-label="Suivant">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 6l6 6l-6 6"/></svg>
+                </button>
             </div>
         </section>
         
-        <!-- ==================== Section Vidéos ==================== -->
-        <section id="videos" class="videos container section">
-            <div class="section__header animate-on-scroll">
-                <h2 class="section__title">Miniatures en Action</h2>
-                <p class="section__subtitle">Découvrez nos créations animées.</p>
-            </div>
-            <div class="videos__grid animate-on-scroll">
-                <div class="video__item">
-                    <video src="https://assets.mixkit.co/videos/preview/mixkit-abstract-video-of-a-man-with-a-special-effect-4328-large.mp4" muted loop autoplay playsinline></video>
-                </div>
-                <div class="video__item">
-                     <video src="https://assets.mixkit.co/videos/preview/mixkit-woman-in-a-floral-shirt-dancing-in-a-hallway-4024-large.mp4" muted loop autoplay playsinline></video>
-                </div>
-            </div>
-        </section>
-
         <!-- ==================== Section Contact (Formulaire) ==================== -->
-        <section id="contact" class="contact container section">
+        <section id="contact" class="section container">
             <div class="section__header animate-on-scroll">
-                <h2 class="section__title">Lancez Votre Projet</h2>
-                <p class="section__subtitle">Remplissez ce formulaire pour commander ou obtenir un devis.</p>
+                <h2 class="section__title">Donnons Vie à Votre Prochaine Vidéo</h2>
+                <p class="section__subtitle">Contactez-nous pour une commande ou toute autre demande.</p>
             </div>
-            <form action="#" class="contact__form animate-on-scroll">
-                <div class="form__group">
-                    <input type="text" name="name" placeholder="Votre Nom Complet" required>
-                    <input type="email" name="email" placeholder="Votre Adresse Email" required>
+            <div class="contact__container animate-on-scroll">
+                <form id="contact-form" class="contact__form">
+                    <div class="form__group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form__group form__group--full">
+                        <label for="instructions">Décrivez votre besoin</label>
+                        <textarea id="instructions" name="instructions" rows="5" placeholder="Titre de la vidéo, style, couleurs, exemples..." required></textarea>
+                    </div>
+                    <button type="submit" class="button button--primary button--full">Envoyer la Demande</button>
+                </form>
+                <div id="form-success-message" class="form__success-message">
+                    <h3>Merci !</h3>
+                    <p>Votre demande a bien été envoyée. Nous reviendrons vers vous dans les plus brefs délais.</p>
                 </div>
-                <div class="form__group">
-                    <input type="text" name="video_type" placeholder="Type de vidéo (ex: Gaming, Tuto, Lifestyle)" required>
-                </div>
-                <div class="form__group">
-                    <textarea name="instructions" placeholder="Décrivez votre besoin : titre de la vidéo, éléments à inclure, style, couleurs, exemples..." rows="6" required></textarea>
-                </div>
-                <button type="submit" class="button button--primary">Envoyer la demande</button>
-            </form>
+            </div>
         </section>
     </main>
 
     <!-- ==================== Footer ==================== -->
     <footer class="footer">
         <div class="footer__container container">
-            <div class="footer__content">
-                <h3 class="footer__title">MiniaturePro Studio</h3>
-                <p>Créons ensemble des visuels inoubliables.</p>
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">MiniaturePro Studio</a>
+                    <p>L'art de la première impression.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#subscriptions" class="footer__link">Abonnements</a>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </div>
             </div>
-            <div class="footer__social">
-                <a href="#" target="_blank" class="footer__social-link">Instagram</a>
-                <a href="mailto:contact@miniaturepro.studio" class="footer__social-link">Email</a>
-                <a href="#" target="_blank" class="footer__social-link">WhatsApp</a>
+            <div class="footer__bottom">
+                <p class="footer__copy">&#169; 2025 MiniaturePro Studio. Tous droits réservés.</p>
+                <div class="footer__social">
+                    <a href="#" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm10.6 2.19a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0zM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6"/></svg></a>
+                    <a href="#" target="_blank" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08.98 4.79.98h.01c5.46 0 9.91-4.45 9.91-9.91c0-2.71-1.04-5.18-2.91-7.05M12.05 20.1c-1.63 0-3.2-.4-4.59-1.15l-.33-.19l-3.34.88l.89-3.27l-.2-.34a8.133 8.133 0 0 1-1.25-4.98c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.23.86 5.82 2.45s2.45 3.63 2.45 5.82c.01 4.54-3.69 8.24-8.23 8.24m4.48-6.13c-.25-.12-1.47-.72-1.7-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.28.18-.53.06c-.25-.12-1.05-.38-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.5c.11-.11.25-.28.37-.42c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.12-.56-1.34-.76-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.31 0-.48 0a1.03 1.03 0 0 0-.74.35c-.23.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.65 4.23 3.72c.59.25 1.05.4 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.08.14-1.18c-.05-.06-.2-.12-.44-.24"/></svg></a>
+                </div>
             </div>
-            <p class="footer__copy">&#169; 2025 MiniaturePro Studio. Tous droits réservés. <a href="#">Mentions Légales</a></p>
         </div>
     </footer>
-    
-    <!-- Bouton flottant WhatsApp -->
-    <a href="#" class="whatsapp-flottant" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
-    </a>
 
     <!-- ==================== JavaScript ==================== -->
     <script src="script.js"></script>
